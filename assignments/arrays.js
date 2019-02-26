@@ -74,7 +74,15 @@ console.log(carId(33));
 
 // ==== Challenge 2 ====
 // The dealer needs the information on the last car in their inventory.  What is the make and model of the last car in the inventory?  Log the make and model into the console.
-let lastCar = inventory.slice().pop();
+let lastCar = [];
+
+function last(a) {
+    let lc = a.slice().pop();
+	return lastCar.push(lc)
+}
+
+last(inventory);
+
 
 
 console.log(lastCar);
@@ -118,16 +126,12 @@ console.log(oldCars.length);
 // ==== Challenge 6 ====
 // A buyer is interested in seeing only BMW and Audi cars within the inventory.  Return an array that only contains BMW and Audi cars.  Once you have populated the BMWAndAudi array, use JSON.stringify() to show the results of the array in the console.
 let BMWAndAudi =[];
-
 for (let i = 0; i < inventory.length; i++) {
     if ((inventory[i].car_make === "BMW") || (inventory[i].car_make === "Audi")){
         BMWAndAudi.push(inventory[i]);
         
     }
 }
-
-// let myJSON = JSON.stringify(BMWAndAudi);
-// document.getElementById("test").innerHTML = myJSON;
 console.log(JSON.stringify(BMWAndAudi));
 
 
