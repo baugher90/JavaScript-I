@@ -126,9 +126,9 @@ for (let i = 0; i < inventory.length; i++) {
     }
 }
 
-let myJSON = JSON.stringify(BMWAndAudi);
-document.getElementById("test").innerHTML = myJSON;
-console.log();
+// let myJSON = JSON.stringify(BMWAndAudi);
+// document.getElementById("test").innerHTML = myJSON;
+console.log(JSON.stringify(BMWAndAudi));
 
 
 
